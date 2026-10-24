@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f3e9" />
+    <title>Thiệp cưới | Huyền Ni & Minh Toàn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="opening" class="opening">
+      <div class="opening-card">
+        <div class="flower">✿</div>
+        <p>TRÂN TRỌNG KÍNH MỜI</p>
+        <h2 id="guestGreeting">Quý khách</h2>
+        <div class="envelope">✉</div>
+        <button id="openBtn" class="button">Mở thiệp cưới ♡</button
+        ><small>Chạm để xem lời mời của chúng mình</small>
+      </div>
+    </div>
+    <button
+      id="musicBtn"
+      class="music"
+      title="Bật hoặc tắt nhạc"
+      aria-label="Bật hoặc tắt nhạc"
+    >
+      ♫
+    </button>
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="ornament">❀ · ❀ · ❀</div>
+          <p class="eyebrow">THE WEDDING OF</p>
+          <h1 id="coupleNames">Huyền Ni <span>&</span> Minh Toàn</h1>
+          <div class="line"></div>
+          <p class="sub">Chúng mình sắp về chung một nhà</p>
+          <p class="date" id="heroDate">21 · 02 · 2027</p>
+          <p class="sub">Chủ nhật · 11:00</p>
+          <a class="scroll" href="#invitation">Khám phá thiệp ↓</a>
+        </div>
+      </section>
+      <section id="invitation" class="section invitation">
+        <p class="eyebrow">WITH LOVE</p>
+        <h2>Lời mời thân thương</h2>
+        <div class="divider">❦</div>
+        <p>
+          Niềm vui sẽ trọn vẹn hơn khi có sự hiện diện của bạn trong ngày đặc
+          biệt của chúng mình.
+        </p>
+        <p>
+          Trân trọng kính mời <strong id="guestName">Quý khách</strong> đến
+          chung vui cùng hai gia đình.
+        </p>
+        <div class="date-card">
+          <span>CHỦ NHẬT</span><strong>21</strong><span>THÁNG 2 · 2027</span>
+          <p>Đón khách lúc 10:00 · Khai tiệc 11:00</p>
+        </div>
+      </section>
+      <section class="section countdown-section">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2>Đếm ngược ngày chung đôi</h2>
+        <div class="countdown">
+          <div><strong id="days">00</strong><span>Ngày</span></div>
+          <div><strong id="hours">00</strong><span>Giờ</span></div>
+          <div><strong id="minutes">00</strong><span>Phút</span></div>
+          <div><strong id="seconds">00</strong><span>Giây</span></div>
+        </div>
+        <p id="countdownMessage" class="muted"></p>
+      </section>
+      <section class="section venue">
+        <p class="eyebrow">LOCATION</p>
+        <h2>Địa điểm tổ chức</h2>
+        <div class="divider">❦</div>
+        <div class="venue-card">
+          <span class="venue-icon">⌖</span>
+          <h3>Nhà hàng tiệc cưới Dự HT</h3>
+          <p>Hòa Tân Đông, Đông Hòa, Phú Yên</p>
+          <p>Chủ nhật, 21/02/2027 · 11:00</p>
+          
+          <a
+            id="mapLink"
+            class="button"
+            href="https://maps.app.goo.gl/Xi6sV2UaAH48NKZGA"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Xem bản đồ chỉ đường ↗</a
+          >
+        </div>
+      </section>
+      <section class="section gallery">
+        <p class="eyebrow">OUR MOMENTS</p>
+        <h2>Khoảnh khắc của chúng mình</h2>
+        <p class="muted">Thay các ảnh mẫu bằng ảnh cưới của hai bạn.</p>
+        <div class="photo-grid">
+          <div class="photo photo-one"><span>Ảnh cưới 01</span></div>
+          <div class="photo photo-two"><span>Ảnh cưới 02</span></div>
+          <div class="photo photo-three"><span>Ảnh cưới 03</span></div>
+        </div>
+      </section>
+      <section class="section rsvp">
+        <p class="eyebrow">RSVP</p>
+        <h2>Xác nhận tham dự</h2>
+        <p>Cho chúng mình biết bạn có thể đến chung vui nhé!</p>
+        <form id="rsvpForm">
+          <label
+            >Họ tên<input
+              name="name"
+              id="rsvpName"
+              placeholder="Tên của bạn"
+              required
+              maxlength="100" /></label
+          ><label
+            >Bạn sẽ tham dự chứ?<select name="attending" id="attending">
+              <option value="Có">Có, mình sẽ đến ♡</option>
+              <option value="Không">Rất tiếc, mình không thể đến</option>
+            </select></label
+          ><label
+            >Số người tham dự<select name="guests" id="guests">
+              <option value="1">1 người</option>
+              <option value="2">2 người</option>
+              <option value="3">3 người</option>
+              <option value="4">4 người</option>
+              <option value="5">5 người</option>
+            </select></label
+          ><label
+            >Lời nhắn (không bắt buộc)<textarea
+              name="message"
+              rows="3"
+              maxlength="500"
+              placeholder="Gửi lời nhắn cho cô dâu chú rể..."
+            ></textarea></label
+          ><button class="button" type="submit">Xác nhận tham dự ♡</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+        <p class="note">
+          Bản demo: thông tin được lưu trên trình duyệt hiện tại, chưa gửi về
+          máy chủ.
+        </p>
+      </section>
+      <section class="section wishes">
+        <p class="eyebrow">BEST WISHES</p>
+        <h2>Sổ lời chúc</h2>
+        <form id="wishForm">
+          <label
+            >Tên của bạn<input
+              id="wishName"
+              required
+              maxlength="100"
+              placeholder="Nhập tên" /></label
+          ><label
+            >Lời chúc<textarea
+              id="wishText"
+              required
+              maxlength="500"
+              rows="3"
+              placeholder="Viết một lời chúc thật dễ thương..."
+            ></textarea></label
+          ><button class="button" type="submit">Gửi lời chúc ♡</button>
+        </form>
+        <div id="wishList" class="wish-list"></div>
+        <p class="note">Lời chúc demo chỉ hiển thị trên thiết bị này.</p>
+      </section>
+      <footer>
+        <div>❀</div>
+        <h2>Huyền Ni & Minh Toàn</h2>
+        <p>Cảm ơn bạn đã là một phần trong ngày vui của chúng mình!</p>
+        <small>Made with ♡</small>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
