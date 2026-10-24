@@ -6,7 +6,7 @@ var CONFIG = {
     venue: 'Nhà hàng tiệc cưới Dự HT',
     address: 'Hòa Tân Đông, Đông Hòa, Phú Yên',
     mapUrl: 'https://maps.app.goo.gl/Xi6sV2UaAH48NKZGA',
-    musicFile: 'music/nhacnen.mp3'
+    musicFile: 'music/runtoyou.mp3'
 };
 (function(){
     var params = new URLSearchParams(window.location.search);
