@@ -504,6 +504,15 @@ footer small {
     }
 }
 
+#musicBtn {
+    animation: musicRotate 5s linear infinite;
+    animation-play-state: paused;
+}
+
+#musicBtn.playing {
+    animation-play-state: running;
+}
+
 .music.playing {
     animation: musicRotate 5s linear infinite;
 }
